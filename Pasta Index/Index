@@ -1,1 +1,144 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Trabalho</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
 
+		body {
+			min-height: 100vh;
+			margin: 0;
+			display: grid;
+			place-items: center;
+			font-family: sans-serif;
+			color: #fcfffb;
+			background: #171716;
+		}
+
+		main {
+			text-align: center;
+			padding: 24px;
+		}
+
+		h1 {
+			margin: 0 0 18px;
+			font-size: 48px;
+			font-weight: 500;
+		}
+
+		h2 {
+			margin: 48px 0 18px;
+			font-size: 32px;
+			font-weight: 500;
+		}
+
+		p {
+			margin: 8px 0;
+			font-size: 18px;
+		}
+
+		form {
+			width: min(480px, 100%);
+			margin: 0 auto;
+			text-align: left;
+		}
+
+		fieldset {
+			margin: 0 0 16px;
+			padding: 16px;
+			border: 1px solid #3a3a38;
+			border-radius: 6px;
+		}
+
+		legend {
+			padding: 0 8px;
+			font-size: 18px;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 4px;
+		}
+
+		input,
+		textarea {
+			display: block;
+			width: 100%;
+			margin-bottom: 14px;
+			padding: 8px 10px;
+			font: inherit;
+			color: inherit;
+			background: #232322;
+			border: 1px solid #3a3a38;
+			border-radius: 4px;
+		}
+
+		textarea {
+			min-height: 120px;
+			resize: vertical;
+		}
+
+		.botoes {
+			display: flex;
+			gap: 12px;
+		}
+
+		button {
+			padding: 8px 20px;
+			font: inherit;
+			color: #171716;
+			background: #fcfffb;
+			border: 1px solid #fcfffb;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		button[type="reset"] {
+			color: #fcfffb;
+			background: transparent;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<h1>Pagina Web</h1>
+		<p>Boas vindas ao meu site do Trabalho</p>
+		<p>Feito por Matheus Silva Guida</p>
+
+		<section id="contato">
+			<h2>Entre em contato</h2>
+
+			<form action="#" method="post">
+				<fieldset>
+					<legend>Seus dados</legend>
+
+					<label for="nome">Nome</label>
+					<input type="text" id="nome" name="nome" required>
+
+					<label for="email">E-mail</label>
+					<input type="email" id="email" name="email" required>
+				</fieldset>
+
+				<fieldset>
+					<legend>Sua mensagem</legend>
+
+					<label for="assunto">Assunto</label>
+					<input type="text" id="assunto" name="assunto">
+
+					<label for="mensagem">Mensagem</label>
+					<textarea id="mensagem" name="mensagem" required></textarea>
+				</fieldset>
+
+				<div class="botoes">
+					<button type="submit">Enviar</button>
+					<button type="reset">Limpar</button>
+				</div>
+			</form>
+		</section>
+	</main>
+</body>
+</html>
