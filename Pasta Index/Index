@@ -22,7 +22,7 @@
 
 	<main>
 		<section class="conteudo" id="apresentacao">
-			<img class="foto" src="foto.jpg" alt="Foto de Matheus Silva Guida">
+			<img class="foto" src="foto.png" alt="Foto">
 			<p>Estudante do curso Técnico em Informática para Internet.</p>
 		</section>
 
