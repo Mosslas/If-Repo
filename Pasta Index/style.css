@@ -1,0 +1,204 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	font-family: "Segoe UI", Arial, sans-serif;
+	color: #fcfffb;
+	background: #171716;
+}
+
+header {
+	padding: 32px 24px 16px;
+	text-align: center;
+	color: #fcfffb;
+	background: #24352a;
+	border-bottom: 3px solid #9bd8a4;
+}
+
+main {
+	flex: 1;
+	width: min(720px, 100%);
+	margin: 0 auto;
+	padding: 24px;
+}
+
+footer {
+	padding: 20px 24px;
+	text-align: center;
+	color: #a9aca8;
+	background: #232322;
+	border-top: 1px solid #3a3a38;
+}
+
+h1 {
+	margin: 0 0 12px;
+	font-family: Georgia, serif;
+	font-size: 48px;
+	font-weight: 500;
+}
+
+h2 {
+	margin: 0 0 18px;
+	font-family: Georgia, serif;
+	font-size: 30px;
+	font-weight: 500;
+	color: #9bd8a4;
+}
+
+p {
+	margin: 8px 0;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+footer p {
+	margin: 0;
+	font-size: 14px;
+}
+
+nav {
+	margin-top: 20px;
+}
+
+nav a {
+	display: inline-block;
+	padding: 6px 14px;
+	color: #9bd8a4;
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+	color: #fcfffb;
+	border-bottom-color: #fcfffb;
+}
+
+.conteudo {
+	margin-bottom: 32px;
+	padding: 24px;
+	text-align: center;
+	background: #1f1f1e;
+	border: 1px solid #3a3a38;
+	border-radius: 8px;
+}
+
+.foto {
+	width: 160px;
+	height: 160px;
+	object-fit: cover;
+	border: 3px solid #9bd8a4;
+	border-radius: 50%;
+}
+
+.interesses {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.interesses li {
+	display: inline-block;
+	margin: 4px;
+	padding: 6px 16px;
+	color: #9bd8a4;
+	border: 1px solid #9bd8a4;
+	border-radius: 999px;
+}
+
+form {
+	width: min(480px, 100%);
+	margin: 0 auto;
+	text-align: left;
+}
+
+fieldset {
+	margin: 0 0 16px;
+	padding: 16px;
+	border: 1px solid #3a3a38;
+	border-radius: 6px;
+}
+
+.dados {
+	border-left: 4px solid #9bd8a4;
+}
+
+.recado {
+	border-left: 4px solid #e0b36a;
+}
+
+legend {
+	padding: 0 8px;
+	font-size: 18px;
+}
+
+.dados legend {
+	color: #9bd8a4;
+}
+
+.recado legend {
+	color: #e0b36a;
+}
+
+label {
+	display: block;
+	margin-bottom: 4px;
+}
+
+input,
+textarea {
+	display: block;
+	width: 100%;
+	margin-bottom: 14px;
+	padding: 8px 10px;
+	font: inherit;
+	color: inherit;
+	background: #232322;
+	border: 1px solid #3a3a38;
+	border-radius: 4px;
+}
+
+input:focus,
+textarea:focus {
+	outline: none;
+	border-color: #9bd8a4;
+}
+
+textarea {
+	min-height: 120px;
+	resize: vertical;
+}
+
+.botoes {
+	display: flex;
+	gap: 12px;
+}
+
+button {
+	padding: 8px 20px;
+	font: inherit;
+	color: #171716;
+	background: #9bd8a4;
+	border: 1px solid #9bd8a4;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #fcfffb;
+	border-color: #fcfffb;
+}
+
+button[type="reset"] {
+	color: #fcfffb;
+	background: transparent;
+	border-color: #3a3a38;
+}
+
+button[type="reset"]:hover {
+	border-color: #fcfffb;
+}
