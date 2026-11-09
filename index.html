@@ -1,4 +1,5 @@
 <!doctype html>
+<html lang="pt-BR">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,29 +11,88 @@
 		<h1>Pagina Web</h1>
 		<p>Boas vindas ao meu site do Trabalho</p>
 		<p>Feito por Matheus Silva Guida</p>
-
-		<nav>
-			<a href="index.html">Início</a>
-			<a href="#interesses">Interesses</a>
-			<a href="#contato">Contato</a>
-			<a href="sobre.html">Sobre</a>
-		</nav>
 	</header>
+
+	<nav>
+		<a href="index.html">Início</a>
+		<a href="#tecnologias">Tecnologias</a>
+		<a href="#contato">Contato</a>
+		<a href="sobre.html">Sobre</a>
+	</nav>
 
 	<main>
 		<section class="conteudo" id="apresentacao">
-			<img class="foto" src="foto.png" alt="Foto">
+			<img class="foto" src="foto.png" alt="Foto de Matheus Silva Guida">
 			<p>Estudante do curso Técnico em Informática para Internet.</p>
 		</section>
 
-		<section class="conteudo" id="interesses">
-			<h2>Interesses</h2>
+		<section class="conteudo" id="tecnologias">
+			<h2>Tecnologias e Interesses</h2>
+			<p>Tecnologias, ferramentas e areas que estudo e tenho interesse.</p>
 
-			<ul class="interesses">
-				<li>Desenho</li>
-				<li>Jogos</li>
-				<li>Programação web</li>
-			</ul>
+			<div class="cards">
+				<article class="card destaque web">
+					<div class="card-topo">
+						<span class="icone">&lt;/&gt;</span>
+						<h3>Desenvolvimento Web</h3>
+					</div>
+					<p>Criação de paginas com HTML e CSS, organizando o layout com Flexbox e Grid.</p>
+					<ul class="tags">
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Flexbox</li>
+						<li>Grid</li>
+					</ul>
+				</article>
+
+				<article class="card versao">
+					<div class="card-topo">
+						<span class="icone">git</span>
+						<h3>Controle de Versão</h3>
+					</div>
+					<p>Versionamento do código e publicação dos trabalhos em repositórios.</p>
+					<ul class="tags">
+						<li>Git</li>
+						<li>GitHub</li>
+					</ul>
+				</article>
+
+				<article class="card python">
+					<div class="card-topo">
+						<span class="icone">py</span>
+						<h3>Programação</h3>
+					</div>
+					<p>Lógica de programação e resolução de problemas com estruturas de seleção.</p>
+					<ul class="tags">
+						<li>Python</li>
+						<li>Algoritmos</li>
+					</ul>
+				</article>
+
+				<article class="card desenho">
+					<div class="card-topo">
+						<span class="icone">&#9998;</span>
+						<h3>Desenho</h3>
+					</div>
+					<p>Ilustração e criação de personagens.</p>
+					<ul class="tags">
+						<li>Ilustração</li>
+						<li>Personagens</li>
+					</ul>
+				</article>
+
+				<article class="card jogos">
+					<div class="card-topo">
+						<span class="icone">&#9654;</span>
+						<h3>Jogos</h3>
+					</div>
+					<p>Jogos de ação, e desempenho e configuração do PC.</p>
+					<ul class="tags">
+						<li>FPS</li>
+						<li>PC</li>
+					</ul>
+				</article>
+			</div>
 		</section>
 
 		<section class="conteudo" id="contato">
